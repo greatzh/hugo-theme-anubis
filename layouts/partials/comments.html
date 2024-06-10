@@ -17,3 +17,7 @@
 {{ if .Site.Params.GiscusRepo}}
     {{ partial "giscus.html" . }}
 {{ end}}
+
+{{ if .Site.Params.walineURL }}
+    {{ partial "waline.html" . }}
+{{ end}}
